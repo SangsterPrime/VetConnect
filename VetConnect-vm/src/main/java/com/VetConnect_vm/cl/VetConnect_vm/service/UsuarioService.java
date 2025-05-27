@@ -23,6 +23,9 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
+    public List<Object[]> findNombreAndEmail() {
+    return usuarioRepository.findNombreAndEmail();
+}
     public Optional<Usuario> findById(long id) {
         return usuarioRepository.findById(id);
     }

@@ -1,12 +1,14 @@
 package com.VetConnect_vm.cl.VetConnect_vm.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -39,7 +41,32 @@ public class MascotaController {
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
+   @PatchMapping("/{id}")
+public ResponseEntity<Mascota> actualizarParcial(
+        @PathVariable Long id,
+        @RequestBody Map<String, Object> updates) {
 
+    return mascotaService.findById(id)
+        .map(mascota -> {
+            updates.forEach((key, value) -> {
+                switch (key) {
+                    case "nombre":
+                        mascota.setNombre((String) value);
+                        break;
+                    case "especie":
+                        mascota.setEspecie((String) value);
+                        break;
+                    case "raza":
+                        mascota.setRaza((String) value);
+                        break;
+                    // Agrega más campos si tu entidad Mascota tiene más atributos
+                }
+            });
+            Mascota actualizada = mascotaService.saveOrUpdate(mascota);
+            return ResponseEntity.ok(actualizada);
+        })
+        .orElse(ResponseEntity.notFound().build());
+} 
     @PostMapping
     public ResponseEntity<Mascota> guardar(@RequestBody Mascota mascota) {
         Mascota mascotaNueva = mascotaService.saveOrUpdate(mascota);
