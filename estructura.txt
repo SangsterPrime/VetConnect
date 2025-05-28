@@ -1,0 +1,141 @@
+Listado de rutas de carpetas para el volumen OS
+El número de serie del volumen es 2A52-7354
+C:.
+¦   definitivisimo.zip
+¦   estructura.txt
+¦   LICENSE
+¦   
++---.qodo
++---VetConnect-vm
+    ¦   .gitattributes
+    ¦   .gitignore
+    ¦   HELP.md
+    ¦   mvnw
+    ¦   mvnw.cmd
+    ¦   pom.xml
+    ¦   
+    +---.mvn
+    ¦   +---wrapper
+    ¦           maven-wrapper.properties
+    ¦           
+    +---.qodo
+    +---.vscode
+    ¦       settings.json
+    ¦       
+    +---src
+    ¦   +---main
+    ¦   ¦   +---java
+    ¦   ¦   ¦   +---com
+    ¦   ¦   ¦       +---VetConnect_vm
+    ¦   ¦   ¦           +---cl
+    ¦   ¦   ¦               +---VetConnect_vm
+    ¦   ¦   ¦                   ¦   VetConnectVmApplication.java
+    ¦   ¦   ¦                   ¦   
+    ¦   ¦   ¦                   +---controller
+    ¦   ¦   ¦                   ¦       CitaController.java
+    ¦   ¦   ¦                   ¦       HistorialController.java
+    ¦   ¦   ¦                   ¦       MascotaController.java
+    ¦   ¦   ¦                   ¦       UsuarioController.java
+    ¦   ¦   ¦                   ¦       VeterinarioController.java
+    ¦   ¦   ¦                   ¦       
+    ¦   ¦   ¦                   +---model
+    ¦   ¦   ¦                   ¦       Cita.java
+    ¦   ¦   ¦                   ¦       Historial.java
+    ¦   ¦   ¦                   ¦       Mascota.java
+    ¦   ¦   ¦                   ¦       Usuario.java
+    ¦   ¦   ¦                   ¦       Veterinario.java
+    ¦   ¦   ¦                   ¦       
+    ¦   ¦   ¦                   +---repository
+    ¦   ¦   ¦                   ¦       CitaRepository.java
+    ¦   ¦   ¦                   ¦       HistorialRepository.java
+    ¦   ¦   ¦                   ¦       MascotaRepository.java
+    ¦   ¦   ¦                   ¦       UsuarioRepository.java
+    ¦   ¦   ¦                   ¦       VeterinarioRepository.java
+    ¦   ¦   ¦                   ¦       
+    ¦   ¦   ¦                   +---service
+    ¦   ¦   ¦                           CitaService.java
+    ¦   ¦   ¦                           HistorialService.java
+    ¦   ¦   ¦                           MascotaService.java
+    ¦   ¦   ¦                           UsuarioService.java
+    ¦   ¦   ¦                           VeterinarioService.java
+    ¦   ¦   ¦                           
+    ¦   ¦   +---resources
+    ¦   ¦       ¦   application.properties
+    ¦   ¦       ¦   
+    ¦   ¦       +---static
+    ¦   ¦       +---templates
+    ¦   +---test
+    ¦       +---java
+    ¦           +---com
+    ¦               +---VetConnect_vm
+    ¦                   +---cl
+    ¦                       +---VetConnect_vm
+    ¦                               VetConnectVmApplicationTests.java
+    ¦                               
+    +---target
+        ¦   VetConnect-vm-0.0.1-SNAPSHOT.jar
+        ¦   VetConnect-vm-0.0.1-SNAPSHOT.jar.original
+        ¦   
+        +---classes
+        ¦   ¦   application.properties
+        ¦   ¦   
+        ¦   +---com
+        ¦       +---VetConnect_vm
+        ¦           +---cl
+        ¦               +---VetConnect_vm
+        ¦                   ¦   VetConnectVmApplication.class
+        ¦                   ¦   
+        ¦                   +---controller
+        ¦                   ¦       CitaController.class
+        ¦                   ¦       HistorialController.class
+        ¦                   ¦       MascotaController.class
+        ¦                   ¦       UsuarioController.class
+        ¦                   ¦       VeterinarioController.class
+        ¦                   ¦       
+        ¦                   +---model
+        ¦                   ¦       Cita.class
+        ¦                   ¦       Historial.class
+        ¦                   ¦       Mascota.class
+        ¦                   ¦       Usuario.class
+        ¦                   ¦       Veterinario.class
+        ¦                   ¦       
+        ¦                   +---repository
+        ¦                   ¦       CitaRepository.class
+        ¦                   ¦       HistorialRepository.class
+        ¦                   ¦       MascotaRepository.class
+        ¦                   ¦       UsuarioRepository.class
+        ¦                   ¦       VeterinarioRepository.class
+        ¦                   ¦       
+        ¦                   +---service
+        ¦                           CitaService.class
+        ¦                           HistorialService.class
+        ¦                           MascotaService.class
+        ¦                           UsuarioService.class
+        ¦                           VeterinarioService.class
+        ¦                           
+        +---generated-sources
+        ¦   +---annotations
+        +---generated-test-sources
+        ¦   +---test-annotations
+        +---maven-archiver
+        ¦       pom.properties
+        ¦       
+        +---maven-status
+        ¦   +---maven-compiler-plugin
+        ¦       +---compile
+        ¦       ¦   +---default-compile
+        ¦       ¦           createdFiles.lst
+        ¦       ¦           inputFiles.lst
+        ¦       ¦           
+        ¦       +---testCompile
+        ¦           +---default-testCompile
+        ¦                   createdFiles.lst
+        ¦                   inputFiles.lst
+        ¦                   
+        +---test-classes
+            +---com
+                +---VetConnect_vm
+                    +---cl
+                        +---VetConnect_vm
+                                VetConnectVmApplicationTests.class
+                                
